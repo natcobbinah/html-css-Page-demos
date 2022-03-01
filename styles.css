@@ -1,0 +1,277 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0rem;
+}
+
+#first-nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#first-nav ul li{
+  list-style: none;
+  padding-right: 1rem;
+}
+
+#first-nav ul li:nth-child(2) i{
+    padding-right: 0.25rem;
+}
+
+#second-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#second-nav .divisions{
+    display: flex;
+    align-items: center;
+}
+
+#second-nav .divisions p{
+    padding: 1rem;
+}
+
+
+#second-nav .rensiegnments{
+    display: flex;
+}
+
+#second-nav .rensiegnments li{
+    list-style: none;
+    padding-right: 2rem;
+}
+
+/*---------------HEADER ON MIDDLE SIZED SCREENS-----------*/
+@media only screen and (max-width: 480px){
+    #first-nav ul{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #second-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #second-nav .divisions{
+        display: flex;
+        align-items: center;
+    }
+
+    #first-nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #second-nav .rensiegnments{
+        display: none;
+    }
+}
+/*------------------------------------------------------------------*/
+
+
+.banner{
+    display: flex;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3BvcnRzfGVufDB8fDB8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=100&amp;q=60 100w");
+    background-size: cover;
+    height: 30rem;
+    margin-bottom: 3rem;
+}
+
+#banner-data ul{
+    display: flex;
+    background-color: #000;
+    padding: 1rem;
+}
+
+#banner-data ul li{
+    list-style: none;
+    padding-right: 2rem;
+}
+
+#banner-data ul li a{
+    color: #fff;
+}
+
+.our-events h2{
+    text-align: center;
+}
+
+.our-events .event-images{
+    display: flex;
+    justify-content: space-around;
+    margin: 3rem 0rem;
+}
+
+.our-events .event-images li img{
+    border-radius: 2rem;
+}
+
+.our-events .event-images li{
+    list-style: none;
+}
+
+/*-----------------MAJOR EVENTS IMAGES RESIZING-----------------*/
+@media only screen and (max-width: 480px){
+    .our-events .event-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 3rem 0rem;
+    }
+}
+/*--------------------------------------------------------------*/
+
+.mission-statement{
+    text-align: center;
+}
+
+.our-brand {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    background-color: #868686;
+}
+
+.our-brand #brand-content{
+    display: flex;
+    width: 50%;
+}
+
+.our-brand #brand-content img{
+    border-radius: 2rem;
+    margin: 1rem 3rem;
+}
+
+.our-brand #brand-content  p{
+    line-height: 1.75rem;
+    text-align: justify;
+    word-spacing: 0.25rem;
+    color: #fff
+}
+
+.our-brand #brand-content img, p{
+    padding: 0.25rem 0.25rem;
+}
+
+/*-----------------BRAND CONTENT  RESIZING-----------------*/
+@media only screen and (max-width: 480px){
+    .our-brand {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        background-color: #868686;
+    }
+    .our-brand #brand-content{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+}
+/*---------------------------------------------------------*/
+
+.our-athletes{
+    display: flex;
+    justify-content: center;
+}
+
+.our-athletes .athletes-info{
+    display: flex;
+    width: 60%;
+}
+
+.our-athletes .athletes-info p{
+    line-height: 1.75rem;
+    word-spacing: 0.25rem;
+}
+
+.our-athletes .athletes-info img{
+    border-radius: 2rem;
+}
+
+.our-athletes .athletes-info h5{
+    text-align: center;
+}
+
+/*-----------------AHTLETES CONTENT  RESIZING-----------------*/
+@media only screen and (max-width: 480px){
+    .our-athletes .athletes-info{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+}
+/*---------------------------------------------------------*/
+
+.signup-letter{
+    display: flex;
+    background-image: url("https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2lnbnVwfGVufDB8fDB8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=400&amp;q=60 400w");
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.signup-letter p:nth-child(2){
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.signup-letter p:nth-child(3){
+    color: #fff;
+    padding: 1rem 4rem;
+    background-color: rgb(218, 21, 21);
+    border-radius: 5rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+footer ul li{
+    list-style: none;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+footer ul li i{
+    font-size: 2rem;
+}
+
+/*-----------------FOOTER CONTENT  RESIZING-----------------*/
+@media only screen and (max-width: 480px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem 2rem;
+        background-color: #1f1f1f;
+        color: #fff;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+    }
+}
+/*----------------------------------------------------------*/
