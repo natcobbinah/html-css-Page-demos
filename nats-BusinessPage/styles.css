@@ -1,0 +1,95 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem; 
+    background-color: #2A2F69;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    padding-right: 2rem;
+}
+
+nav ul li a{
+    color: #fff;
+}
+
+#banner{
+   display: flex;
+   background-image: url("https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=871&amp;q=80 871w");
+   height: 400px;
+   background-size: cover;
+   align-items: center;
+}
+
+#banner #content-data{
+    display: flex;
+    background-color: #3b46bb;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    font-style: italic;
+}
+
+#content h2{
+    text-align: center;
+}
+
+#content .products ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#content .products ul li img{
+    border-radius: 20px;
+}
+
+#content .products ul li p{
+   text-align: center;
+   font-size: 1.25rem;
+   font-style: italic;
+   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+#employees h2{
+    text-align: center;
+}
+
+#employees .all-employees{
+    display: flex;
+    justify-content: space-between;
+}
+
+#employees .employee-info{
+    margin: 0.75rem 0.75rem;
+    width: 15.25rem;
+    height: 15.25rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 3rem;
+    background-color: #2A2F69;
+    color: #fff;
+}
